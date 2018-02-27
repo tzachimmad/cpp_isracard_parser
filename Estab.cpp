@@ -11,6 +11,8 @@
 #include <iostream>            // for cout and cin
 using namespace std;
 
+int Estab::year = 2017;
+
 Estab::Estab(string estab)
 {
     this->estab = estab;
@@ -18,10 +20,6 @@ Estab::Estab(string estab)
         expenseArr[i]=0;
 }
 
-void Estab::set_year(int in_year)
-{
-    Estab::year = in_year;
-}
 
 Estab::~Estab()
 {

@@ -17,11 +17,11 @@ public:                      // begin public section
     Estab(std::string estab);       // constructor
     void add_expense(int mn, int year, int amount);
     ~Estab();                    // destructor
-    static void set_year(int in_year);
+    static int year;
+    
     
     
 private:                      // begin private section
-    static int year;
     std::string estab;
     std::array<int, 24> expenseArr;
 };
